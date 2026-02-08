@@ -1,0 +1,13 @@
+# Raw photo/video assets (not part of the site — these go to R2)
+photo-assets/
+woodwork-non-photo-assets/
+
+# Image conversion script (local tooling, not needed in deploy)
+ww.sh
+
+# IDE
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -1,0 +1,235 @@
+/* ============================================
+   DESIGN SYSTEM — CSS Custom Properties
+   ============================================
+   All colours, fonts, and spacing are defined here.
+   Change these values to retheme the entire site.
+   ============================================ */
+
+:root {
+    /* --- Colour palette ---
+       Restrained and warm. The project photos provide the colour;
+       the site itself stays neutral and lets them breathe. */
+    --color-bg:          #faf9f7;    /* warm off-white background */
+    --color-bg-alt:      #f0eeeb;    /* slightly darker for contrast sections */
+    --color-text:        #2c2c2c;    /* near-black, softer than pure #000 */
+    --color-text-muted:  #6b6560;    /* de-emphasised text (dates, captions) */
+    --color-accent:      #8b7355;    /* warm brown — used sparingly */
+    --color-border:      #ddd8d0;    /* subtle dividers */
+    --color-white:       #ffffff;
+
+    /* --- Typography ---
+       Serif for headings (DM Serif Display — has warmth and character).
+       Newsreader for body text (a literary serif that suits a craft portfolio).
+       Inter for UI elements (nav, buttons, labels). */
+    --font-heading: 'DM Serif Display', Georgia, serif;
+    --font-body:    'Newsreader', Georgia, serif;
+    --font-ui:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    /* --- Font sizes (fluid where it matters) --- */
+    --text-xs:   0.75rem;   /* 12px */
+    --text-sm:   0.875rem;  /* 14px */
+    --text-base: 1rem;      /* 16px */
+    --text-lg:   1.125rem;  /* 18px */
+    --text-xl:   1.5rem;    /* 24px */
+    --text-2xl:  2rem;      /* 32px */
+    --text-3xl:  2.75rem;   /* 44px */
+    --text-hero: clamp(2.5rem, 5vw, 4rem);  /* responsive hero text */
+
+    /* --- Spacing scale --- */
+    --space-xs:  0.5rem;    /* 8px */
+    --space-sm:  1rem;      /* 16px */
+    --space-md:  1.5rem;    /* 24px */
+    --space-lg:  3rem;      /* 48px */
+    --space-xl:  5rem;      /* 80px */
+    --space-2xl: 8rem;      /* 128px */
+
+    /* --- Layout --- */
+    --max-width:      1200px;
+    --max-width-text: 680px;   /* for readable text blocks */
+
+    /* --- Transitions --- */
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+}
+
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    font-weight: 400;   /* DM Serif Display only has regular weight */
+    line-height: 1.2;
+}
+
+h1 { font-size: var(--text-hero); }
+h2 { font-size: var(--text-2xl); }
+h3 { font-size: var(--text-xl); }
+
+p {
+    max-width: var(--max-width-text);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+}
+
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: var(--space-md);
+}
+
+.section {
+    padding-block: var(--space-xl);
+}
+
+
+/* ============================================
+   PROJECT GRID
+   ============================================
+   Used on the Projects page and for featured
+   projects on the Home page. */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-md);
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background: var(--color-white);
+    transition: transform var(--transition-base);
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.project-card-body {
+    padding: var(--space-sm) var(--space-sm) var(--space-md);
+}
+
+.project-card-body h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-xs);
+}
+
+.project-card-body .text-muted {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+
+/* ============================================
+   TAG FILTERS
+   ============================================ */
+
+.tag-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-lg);
+}
+
+.tag-filters button {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    padding: 0.4em 1em;
+    border: 1px solid var(--color-border);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.tag-filters button:hover,
+.tag-filters button.active {
+    background: var(--color-text);
+    color: var(--color-bg);
+    border-color: var(--color-text);
+}
+
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding-block: var(--space-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --space-md: 1rem;
+    }
+}

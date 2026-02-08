@@ -1,0 +1,84 @@
+{
+  "imageBaseUrl": "https://images.mattbedford.work",
+  "projects": [
+    {
+      "slug": "reclaimed-oak-coffee-table",
+      "title": "Reclaimed Oak Coffee Table",
+      "description": "Built from reclaimed oak floorboards, hand-finished with Danish oil. The grain on these boards was too good to hide.",
+      "date": "2024-08-22",
+      "tags": ["tables"],
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "little-wooden-house-set",
+      "title": "Little Wooden House Set",
+      "description": "A set of decorative wooden houses in mixed hardwoods. Each one is unique, shaped and sanded by hand.",
+      "date": "2024-01-25",
+      "tags": ["little wooden houses"],
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp"
+      ]
+    },
+    {
+      "slug": "walnut-desk-lamp",
+      "title": "Walnut Desk Lamp",
+      "description": "A simple desk lamp carved from a single piece of walnut. Wired with a warm LED filament bulb.",
+      "date": "2023-08-03",
+      "tags": ["lighting"],
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "keepsake-box-cherry",
+      "title": "Cherry Keepsake Box",
+      "description": "A dovetailed keepsake box in cherry with a cedar-lined interior. Finished with shellac.",
+      "date": "2023-05-23",
+      "tags": ["boxes"],
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "victorian-chair-restoration",
+      "title": "Victorian Chair Restoration",
+      "description": "Stripped, repaired and re-upholstered a Victorian nursing chair. New joints, original character.",
+      "date": "2022-11-24",
+      "tags": ["restorations"],
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp"
+      ]
+    },
+    {
+      "slug": "floating-shelves-ash",
+      "title": "Floating Shelves in Ash",
+      "description": "A pair of floating shelves from locally sourced ash. Hidden French cleat mounting.",
+      "date": "2022-05-10",
+      "tags": ["tables"],
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp"
+      ]
+    }
+  ]
+}
