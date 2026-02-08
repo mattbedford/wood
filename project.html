@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project — Matt Bedford Woodwork</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/components.js" defer></script>
+    <script src="js/project.js" defer></script>
+
+    <style>
+        /* ==============================================
+           SINGLE PROJECT PAGE STYLES
+           ============================================== */
+
+        /* --- Back link --- */
+
+        .back-link {
+            display: inline-block;
+            font-family: var(--font-ui);
+            font-size: var(--text-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-text-muted);
+            padding: var(--space-md);
+            max-width: var(--max-width);
+            margin-inline: auto;
+            width: 100%;
+        }
+
+        .back-link:hover {
+            color: var(--color-text);
+        }
+
+
+        /* --- Main image --- */
+
+        .project-hero {
+            max-width: var(--max-width);
+            margin-inline: auto;
+            padding: 0 var(--space-md) var(--space-lg);
+        }
+
+        .project-hero img {
+            width: 100%;
+            max-height: 70vh;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+
+        /* --- Project info --- */
+
+        .project-info {
+            max-width: var(--max-width);
+            margin-inline: auto;
+            padding: 0 var(--space-md) var(--space-xl);
+        }
+
+        .project-info h1 {
+            margin-bottom: var(--space-xs);
+        }
+
+        .project-meta {
+            font-family: var(--font-ui);
+            font-size: var(--text-sm);
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: var(--space-md);
+        }
+
+        .project-info .description {
+            font-size: var(--text-lg);
+            line-height: 1.7;
+            max-width: var(--max-width-text);
+        }
+
+
+        /* --- Gallery grid --- */
+
+        .gallery {
+            max-width: var(--max-width);
+            margin-inline: auto;
+            padding: 0 var(--space-md) var(--space-xl);
+        }
+
+        .gallery h2 {
+            font-size: var(--text-xl);
+            margin-bottom: var(--space-md);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: var(--space-sm);
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: opacity var(--transition-fast);
+        }
+
+        .gallery-grid img:hover {
+            opacity: 0.85;
+        }
+
+
+        /* --- Lightbox overlay ---
+           A full-screen overlay for viewing gallery images.
+           Built from scratch — no libraries needed. */
+
+        .lightbox {
+            display: none;              /* hidden by default */
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background: rgba(20, 18, 16, 0.92);
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-md);
+        }
+
+        .lightbox.open {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 3px;
+        }
+
+        /* Close button */
+        .lightbox-close {
+            position: absolute;
+            top: var(--space-md);
+            right: var(--space-md);
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            font-size: 2rem;
+            cursor: pointer;
+            line-height: 1;
+            padding: 0.25em;
+            transition: color var(--transition-fast);
+        }
+
+        .lightbox-close:hover {
+            color: #fff;
+        }
+
+        /* Prev/Next arrows */
+        .lightbox-prev,
+        .lightbox-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            font-size: 2.5rem;
+            cursor: pointer;
+            padding: 0.5em;
+            transition: color var(--transition-fast);
+        }
+
+        .lightbox-prev:hover,
+        .lightbox-next:hover {
+            color: #fff;
+        }
+
+        .lightbox-prev { left: var(--space-sm); }
+        .lightbox-next { right: var(--space-sm); }
+
+
+        /* --- Prev/Next project navigation --- */
+
+        .project-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--max-width);
+            margin-inline: auto;
+            padding: var(--space-lg) var(--space-md);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .project-nav a {
+            font-family: var(--font-ui);
+            font-size: var(--text-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-text-muted);
+        }
+
+        .project-nav a:hover {
+            color: var(--color-text);
+        }
+
+        .project-nav .label {
+            display: block;
+            font-family: var(--font-heading);
+            font-size: var(--text-lg);
+            text-transform: none;
+            letter-spacing: 0;
+            color: var(--color-text);
+            margin-top: 0.2em;
+        }
+
+
+        /* --- Responsive --- */
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-nav .label {
+                font-size: var(--text-base);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <site-header></site-header>
+
+    <!-- Back link -->
+    <a href="projects.html" class="back-link">&larr; All projects</a>
+
+    <!-- Main image, project info, gallery, and nav are all
+         rendered by project.js based on the ?slug= parameter -->
+    <div id="project-hero" class="project-hero"></div>
+    <div id="project-info" class="project-info"></div>
+    <div id="gallery" class="gallery"></div>
+
+    <!-- Lightbox (hidden until a gallery image is clicked) -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-label="Image viewer">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+        <img src="" alt="">
+        <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+    </div>
+
+    <!-- Prev/Next project links (rendered by project.js) -->
+    <nav id="project-nav" class="project-nav" aria-label="Project navigation"></nav>
+
+    <site-footer></site-footer>
+
+</body>
+</html>

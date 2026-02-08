@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Matt Bedford Woodwork</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/components.js" defer></script>
+    <script src="js/projects.js" defer></script>
+
+    <style>
+        /* ==============================================
+           PROJECTS PAGE STYLES
+           ============================================== */
+
+        .page-header {
+            max-width: var(--max-width);
+            margin-inline: auto;
+            padding: var(--space-xl) var(--space-md) var(--space-lg);
+        }
+
+        .page-header h1 {
+            margin-bottom: var(--space-xs);
+        }
+
+        .page-header p {
+            color: var(--color-text-muted);
+            font-size: var(--text-lg);
+        }
+
+        .projects-section {
+            max-width: var(--max-width);
+            margin-inline: auto;
+            padding: 0 var(--space-md) var(--space-2xl);
+        }
+
+        /* Override the base card styles for this page:
+           no white background, just clean image + text */
+        .projects-section .project-card {
+            background: none;
+            border-radius: 0;
+        }
+
+        .projects-section .project-card:hover {
+            transform: none;
+        }
+
+        .projects-section .project-card .img-wrap {
+            overflow: hidden;
+            border-radius: 3px;
+        }
+
+        .projects-section .project-card img {
+            transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        .projects-section .project-card:hover img {
+            transform: scale(1.03);
+        }
+
+        .projects-section .project-card a {
+            display: block;
+            color: inherit;
+        }
+
+        .projects-section .project-card-body {
+            padding: var(--space-sm) 0.25rem var(--space-md);
+        }
+
+        .projects-section .project-card-body .tag {
+            font-family: var(--font-ui);
+            font-size: var(--text-xs);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--color-text-muted);
+        }
+
+        /* Fade transition when filtering */
+        .project-card {
+            transition: opacity var(--transition-base);
+        }
+
+        .project-card.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <site-header></site-header>
+
+    <header class="page-header">
+        <h1>Projects</h1>
+        <p>Everything I've made, newest first.</p>
+    </header>
+
+    <section class="projects-section" aria-label="Project gallery">
+        <!-- Tag filter buttons are rendered here by projects.js -->
+        <div id="tag-filters" class="tag-filters"></div>
+
+        <!-- Project cards are rendered here by projects.js -->
+        <div id="project-grid" class="project-grid"></div>
+    </section>
+
+    <site-footer></site-footer>
+
+</body>
+</html>

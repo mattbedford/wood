@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/components.js" defer></script>
 
     <style>
         /* ==============================================
@@ -20,40 +21,6 @@
            These stay here (not in style.css) because they
            only apply to the landing page layout.
            ============================================== */
-
-        /* --- Nav (temporary — will become <site-header> component) --- */
-
-        .site-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: var(--space-md) var(--space-md);
-            max-width: var(--max-width);
-            margin-inline: auto;
-        }
-
-        .site-nav .wordmark {
-            font-family: var(--font-heading);
-            font-size: var(--text-lg);
-            letter-spacing: -0.01em;
-        }
-
-        .site-nav ul {
-            display: flex;
-            list-style: none;
-            gap: var(--space-md);
-        }
-
-        .site-nav a {
-            font-size: var(--text-sm);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--color-text-muted);
-        }
-
-        .site-nav a:hover {
-            color: var(--color-text);
-        }
 
 
         /* --- Hero: split layout (text left, image right) --- */
@@ -282,32 +249,6 @@
         }
 
 
-        /* --- Footer (temporary — will become <site-footer>) --- */
-
-        .site-footer {
-            border-top: 1px solid var(--color-border);
-            padding: var(--space-lg) var(--space-md);
-            text-align: center;
-        }
-
-        .site-footer p {
-            font-size: var(--text-sm);
-            color: var(--color-text-muted);
-            margin-inline: auto;
-        }
-
-        .site-footer a {
-            color: var(--color-accent);
-        }
-
-        .site-footer .footer-name {
-            font-family: var(--font-heading);
-            font-size: var(--text-lg);
-            color: var(--color-text);
-            margin-bottom: var(--space-xs);
-        }
-
-
         /* --- Page-load entrance animations --- */
 
         @keyframes fadeUp {
@@ -379,10 +320,6 @@
         }
 
         @media (max-width: 480px) {
-            .site-nav ul {
-                gap: var(--space-sm);
-            }
-
             .intro {
                 padding: var(--space-xl) var(--space-md) var(--space-lg);
             }
@@ -391,14 +328,7 @@
 </head>
 <body>
 
-    <!-- Navigation — will be extracted into <site-header> web component later -->
-    <nav class="site-nav" aria-label="Main navigation">
-        <a href="/" class="wordmark">Matt Bedford</a>
-        <ul>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+    <site-header></site-header>
 
 
     <!-- Hero: split layout — headline left, workshop photo right -->
@@ -507,14 +437,7 @@
     </section>
 
 
-    <!-- Footer — will be extracted into <site-footer> web component later -->
-    <footer class="site-footer">
-        <p class="footer-name">Matt Bedford</p>
-        <p>Handmade woodwork from a small workshop in the UK.</p>
-        <p style="margin-top: var(--space-sm);">
-            <a href="mailto:matt@mattbedford.work">matt@mattbedford.work</a>
-        </p>
-    </footer>
+    <site-footer></site-footer>
 
 </body>
 </html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Matt Bedford Woodwork</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/components.js" defer></script>
+
+    <style>
+        /* ==============================================
+           ABOUT PAGE STYLES
+           ============================================== */
+
+        /* --- Portrait + intro: split layout like the homepage hero --- */
+
+        .about-intro {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: var(--space-lg);
+            align-items: center;
+            max-width: var(--max-width);
+            margin-inline: auto;
+            padding: var(--space-xl) var(--space-md);
+        }
+
+        .about-portrait {
+            overflow: hidden;
+            border-radius: 3px;
+        }
+
+        .about-portrait img {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            object-position: center 20%;
+        }
+
+        .about-text h1 {
+            margin-bottom: var(--space-sm);
+        }
+
+        .about-text p {
+            font-size: var(--text-lg);
+            line-height: 1.75;
+            margin-bottom: var(--space-sm);
+        }
+
+        /* --- Rule divider --- */
+
+        .rule {
+            display: block;
+            width: 48px;
+            height: 1px;
+            background: var(--color-accent);
+            border: none;
+            margin: var(--space-lg) auto;
+        }
+
+        /* --- Workshop section: full-width image + text --- */
+
+        .about-workshop {
+            max-width: var(--max-width);
+            margin-inline: auto;
+            padding: 0 var(--space-md) var(--space-xl);
+        }
+
+        .about-workshop img {
+            width: 100%;
+            max-height: 50vh;
+            object-fit: cover;
+            border-radius: 3px;
+            margin-bottom: var(--space-lg);
+        }
+
+        .about-workshop-text {
+            max-width: var(--max-width-text);
+        }
+
+        .about-workshop-text h2 {
+            margin-bottom: var(--space-sm);
+        }
+
+        .about-workshop-text p {
+            font-size: var(--text-lg);
+            line-height: 1.75;
+            margin-bottom: var(--space-sm);
+        }
+
+        /* --- Responsive --- */
+
+        @media (max-width: 768px) {
+            .about-intro {
+                grid-template-columns: 1fr;
+                padding: var(--space-lg) var(--space-md);
+            }
+
+            .about-portrait {
+                order: 1;
+            }
+
+            .about-text {
+                order: 2;
+            }
+
+            .about-portrait img {
+                aspect-ratio: 3 / 2;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <site-header></site-header>
+
+    <!-- Portrait + intro text -->
+    <section class="about-intro">
+        <div class="about-portrait">
+            <img
+                src="img/about-portrait.webp"
+                alt="Matt Bedford holding a jack plane in his workshop"
+                width="800"
+                height="1000"
+            >
+        </div>
+        <div class="about-text">
+            <h1>About Matt</h1>
+            <!-- ================================================
+                 PLACEHOLDER TEXT — replace with your own words!
+                 ================================================ -->
+            <p>
+                I'm Matt Bedford, a woodworker based in the UK. I build
+                furniture, boxes, lamps, little wooden houses, and whatever
+                else the timber asks to become. Everything is made by hand
+                in my small workshop.
+            </p>
+            <p>
+                By day I'm a software developer. Woodwork is the antidote
+                — something slow, physical, and real. No screens, no
+                deploys, just sharp tools and good grain.
+            </p>
+            <p>
+                I work mostly with reclaimed and locally sourced hardwoods:
+                oak, ash, cherry, walnut. Each piece is hand-finished with
+                oils and waxes rather than spray lacquers. It takes longer,
+                but you can feel the difference.
+            </p>
+        </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Workshop photo + more text -->
+    <section class="about-workshop">
+        <img
+            src="img/about-workshop.webp"
+            alt="An oak cabinet on the workbench, mid-build"
+            width="1200"
+            height="800"
+            loading="lazy"
+        >
+        <div class="about-workshop-text">
+            <h2>The philosophy</h2>
+            <p>
+                No table saws. No routers. No power sanders. Apart from
+                a couple of drills, everything in the workshop runs on
+                effort and patience. That's a deliberate choice, not a
+                limitation.
+            </p>
+            <p>
+                I believe in joinery over fixings — dovetails, mortise
+                and tenon, finger joints, housing joints. Proper joints
+                that hold because the wood itself wants to stay together,
+                not because a screw is forcing it. You won't find nails
+                in my work. If the joinery is right, you don't need them.
+            </p>
+            <p>
+                Truthfully, all I need is a chisel, a hand plane and a
+                hammer. Everything else is extraneous.
+            </p>
+            <p>
+                If you're interested in commissioning a piece, or you
+                just want to talk about wood, drop me a line at
+                <a href="mailto:matt@mattbedford.work">matt@mattbedford.work</a>.
+            </p>
+        </div>
+    </section>
+
+    <site-footer></site-footer>
+
+</body>
+</html>
