@@ -38,7 +38,7 @@ class SiteHeader extends HTMLElement {
 
         this.innerHTML = `
             <nav class="site-nav" aria-label="Main navigation">
-                <a href="/" class="wordmark">Matt Bedford</a>
+                <a href="/" class="wordmark">Matt Bedford | Woodwork</a>
                 <ul>
                     <li><a href="projects.html"${isProjects ? ' class="active"' : ''}>Projects</a></li>
                     <li><a href="about.html"${isAbout ? ' class="active"' : ''}>About</a></li>
@@ -61,7 +61,7 @@ class SiteFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <footer class="site-footer">
-                <p class="footer-name">Matt Bedford</p>
+                <p class="footer-name">Matt Bedford | Woodwork</p>
                 <p>Handmade woodwork built to last forever</p>
                 <p style="margin-top: var(--space-sm);">
                     <a href="mailto:matt@mattbedford.work">matt@mattbedford.work</a>
