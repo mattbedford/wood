@@ -40,6 +40,27 @@
       ]
     },
     {
+      "slug": "custom-rabbit-hutch",
+      "title": "Custom rabbit hutch",
+      "description": "Custom rabbit hutch with fully removable flooring for easy cleaning, plus three access doors. Rabbit privacy is ensured thanks to a comfortable, ventilated concealed section. The build is finished with food-safe Osmo oil and stainless steel hardware for hinges, door clasps and hutch wire.",
+      "date": "2025-04-01",
+      "tags": [
+        "Cases and Boxes",
+        "Everyday Objects"
+      ],
+      "material": "Douglas pine",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp",
+        "06.webp",
+        "07.webp"
+      ]
+    },
+    {
       "slug": "japanese-style-tool-box",
       "title": "Japanese-style tool box",
       "description": "A wooden tool box, built from solid cherry wood with ash features. Actually, the top lid is hinged, which distinguishes it from the genuine Japanese tradition for tool boxes (and which use a wedge arrangement to close the box and keep it shut). It features a pull handle on the front of the box and a subset drawer on steel runners.",
@@ -67,27 +88,6 @@
       "gallery": [
         "01.webp",
         "02.webp"
-      ]
-    },
-    {
-      "slug": "custom-rabbit-hutch",
-      "title": "Custom rabbit hutch",
-      "description": "Custom rabbit hutch with fully removable flooring for easy cleaning, plus three access doors. Rabbit privacy is ensured thanks to a comfortable, ventilated concealed section. The build is finished with food-safe Osmo oil and stainless steel hardware for hinges, door clasps and hutch wire.",
-      "date": "2025-04-01",
-      "tags": [
-        "Cases and Boxes",
-        "Everyday Objects"
-      ],
-      "material": "Douglas pine",
-      "mainImage": "main.webp",
-      "gallery": [
-        "01.webp",
-        "02.webp",
-        "03.webp",
-        "04.webp",
-        "05.webp",
-        "06.webp",
-        "07.webp"
       ]
     },
     {
