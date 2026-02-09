@@ -64,7 +64,7 @@ class SiteFooter extends HTMLElement {
                 <p class="footer-name">Matt Bedford | Woodwork</p>
                 <p>Handmade woodwork built to last forever</p>
                 <p style="margin-top: var(--space-sm);">
-                    <a href="mailto:matt@mattbedford.work">matt@mattbedford.work</a> | <a href="https://www.simpleanalytics.com/" target="_blank">No. No cookies here. Only privacy-centric analytics</a> | <a href="/llms.txt">llms.txt</a>
+                    <a href="mailto:matt@mattbedford.work">matt@mattbedford.work</a> | <a href="https://www.simpleanalytics.com/" target="_blank">No cookies here. Only privacy-centric analytics</a> | <a href="/llms.txt">llms.txt</a>
                 </p>
             </footer>
         `;
