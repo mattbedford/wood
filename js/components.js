@@ -62,7 +62,7 @@ class SiteFooter extends HTMLElement {
         this.innerHTML = `
             <footer class="site-footer">
                 <p class="footer-name">Matt Bedford</p>
-                <p>Handmade woodwork from a small workshop in the UK.</p>
+                <p>Handmade woodwork built to last forever</p>
                 <p style="margin-top: var(--space-sm);">
                     <a href="mailto:matt@mattbedford.work">matt@mattbedford.work</a>
                 </p>

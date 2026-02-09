@@ -289,7 +289,10 @@
       "gallery": [
         "01.webp",
         "02.webp",
-        "03.webp"
+        "03.webp",
+        "04.webp",
+        "05.webp",
+        "06.webp"
       ]
     },
     {
@@ -512,23 +515,6 @@
       "gallery": [
         "01.webp",
         "02.webp"
-      ]
-    },
-    {
-      "slug": "walnut-keepsake",
-      "title": "Walnut keepsake",
-      "description": "Two-tone keepsake with outer shell of black walnut with inner and lid fashioned from ash. The box features a mitred design, wherein the inner box is the main structural support of the outer one and enables the lid to fit snugly into position.",
-      "date": "2021-04-01",
-      "tags": [
-        "Everyday Objects",
-        "Cases and Boxes"
-      ],
-      "material": "Walnut, ash",
-      "mainImage": "main.webp",
-      "gallery": [
-        "01.webp",
-        "02.webp",
-        "03.webp"
       ]
     },
     {
