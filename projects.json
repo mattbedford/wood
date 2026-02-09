@@ -2,82 +2,607 @@
   "imageBaseUrl": "https://images.mattbedford.work",
   "projects": [
     {
-      "slug": "reclaimed-oak-coffee-table",
-      "title": "Reclaimed Oak Coffee Table",
-      "description": "Built from reclaimed oak floorboards, hand-finished with Danish oil. The grain on these boards was too good to hide.",
-      "date": "2024-08-22",
-      "tags": ["tables"],
-      "mainImage": "main.webp",
-      "gallery": [
-        "01.webp",
-        "02.webp",
-        "03.webp"
-      ]
-    },
-    {
-      "slug": "little-wooden-house-set",
-      "title": "Little Wooden House Set",
-      "description": "A set of decorative wooden houses in mixed hardwoods. Each one is unique, shaped and sanded by hand.",
-      "date": "2024-01-25",
-      "tags": ["little wooden houses"],
+      "slug": "single-piece-glasses-case",
+      "title": "Single-piece glasses case",
+      "description": "Made from a single block of chestnut, this glasses case is decorated with a little gold penguin - a nod to the Linux mascot, Tux, and my day job as a software developer. The case has a felt and cork lining and a magnetic closure for safe keeping.",
+      "date": "2026-01-01",
+      "tags": [
+        "Everyday Objects",
+        "Cases and Boxes"
+      ],
+      "material": "Chestnut, walnut",
       "mainImage": "main.webp",
       "gallery": [
         "01.webp",
         "02.webp",
         "03.webp",
-        "04.webp"
+        "04.webp",
+        "05.webp",
+        "06.webp",
+        "07.webp",
+        "08.webp"
       ]
     },
     {
-      "slug": "walnut-desk-lamp",
-      "title": "Walnut Desk Lamp",
-      "description": "A simple desk lamp carved from a single piece of walnut. Wired with a warm LED filament bulb.",
-      "date": "2023-08-03",
-      "tags": ["lighting"],
-      "mainImage": "main.webp",
-      "gallery": [
-        "01.webp",
-        "02.webp",
-        "03.webp"
-      ]
-    },
-    {
-      "slug": "keepsake-box-cherry",
-      "title": "Cherry Keepsake Box",
-      "description": "A dovetailed keepsake box in cherry with a cedar-lined interior. Finished with shellac.",
-      "date": "2023-05-23",
-      "tags": ["boxes"],
-      "mainImage": "main.webp",
-      "gallery": [
-        "01.webp",
-        "02.webp",
-        "03.webp"
-      ]
-    },
-    {
-      "slug": "victorian-chair-restoration",
-      "title": "Victorian Chair Restoration",
-      "description": "Stripped, repaired and re-upholstered a Victorian nursing chair. New joints, original character.",
-      "date": "2022-11-24",
-      "tags": ["restorations"],
-      "mainImage": "main.webp",
-      "gallery": [
-        "01.webp",
-        "02.webp",
-        "03.webp",
-        "04.webp"
-      ]
-    },
-    {
-      "slug": "floating-shelves-ash",
-      "title": "Floating Shelves in Ash",
-      "description": "A pair of floating shelves from locally sourced ash. Hidden French cleat mounting.",
-      "date": "2022-05-10",
-      "tags": ["tables"],
+      "slug": "tablet-device-e-charger",
+      "title": "Tablet device e-Charger",
+      "description": "A single block of teak, but hiding inside a fully-functional 15w wireless charging unit. Decorated with a floral pattern in vinyl, the e-Charger can wirelessly recharge any current-model phone or tablet with wireless-charging enabled, upto a size of around 9-inches.",
+      "date": "2025-12-01",
+      "tags": [
+        "Electronics",
+        "Everyday Objects"
+      ],
+      "material": "Teak",
       "mainImage": "main.webp",
       "gallery": [
         "01.webp",
         "02.webp"
+      ]
+    },
+    {
+      "slug": "japanese-style-tool-box",
+      "title": "Japanese-style tool box",
+      "description": "A wooden tool box, built from solid cherry wood with ash features. Actually, the top lid is hinged, which distinguishes it from the genuine Japanese tradition for tool boxes (and which use a wedge arrangement to close the box and keep it shut). It features a pull handle on the front of the box and a subset drawer on steel runners.",
+      "date": "2025-09-01",
+      "tags": [
+        "Cases and Boxes"
+      ],
+      "material": "Cherry, ash",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp"
+      ]
+    },
+    {
+      "slug": "zen-garden",
+      "title": "Zen garden",
+      "description": "A simple box with accompanying tool holder fopr a decorative - and relaxing - oriental-style zen garden.",
+      "date": "2025-07-01",
+      "tags": [
+        "Everyday Objects"
+      ],
+      "material": "Cherry",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp"
+      ]
+    },
+    {
+      "slug": "custom-rabbit-hutch",
+      "title": "Custom rabbit hutch",
+      "description": "Custom rabbit hutch with fully removable flooring for easy cleaning, plus three access doors. Rabbit privacy is ensured thanks to a comfortable, ventilated concealed section. The build is finished with food-safe Osmo oil and stainless steel hardware for hinges, door clasps and hutch wire.",
+      "date": "2025-04-01",
+      "tags": [
+        "Cases and Boxes",
+        "Everyday Objects"
+      ],
+      "material": "Douglas pine",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp",
+        "06.webp",
+        "07.webp"
+      ]
+    },
+    {
+      "slug": "tooth-fairy-box",
+      "title": "Tooth fairy box",
+      "description": "A small box crafted from a solid block of beech wood. It's tiny, of course, made for storing teeth for when the tooth fairy comes to visit and features inlaid brass hinges and dual magnetic closures.",
+      "date": "2024-12-01",
+      "tags": [
+        "Cases and Boxes",
+        "Everyday Objects"
+      ],
+      "material": "Beech",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp"
+      ]
+    },
+    {
+      "slug": "built-in-closet-shoe-rack",
+      "title": "Built-in closet shoe-rack",
+      "description": "Standing just over two metres in height and built to measure inside a walk-in closet, this piece features a series of extractable shoe shelves as well as an additional upper storage area.",
+      "date": "2024-08-01",
+      "tags": [
+        "Furniture"
+      ],
+      "material": "Douglas pine, oak veneer",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp",
+        "06.webp"
+      ]
+    },
+    {
+      "slug": "kitchen-knife-stand",
+      "title": "Kitchen knife stand",
+      "description": "A kitchen knife stand with embedded molybdenum magnets and a protective plexiglass frontal piece.",
+      "date": "2024-06-01",
+      "tags": [
+        "Everyday Objects"
+      ],
+      "material": "Oak, plexiglass",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "axolotyl-desk-decoration",
+      "title": "Axolotyl desk decoration",
+      "description": "A playful piece made from cut-offs of another project and existing purely to bring a smile to axolotyl lovers' faces.",
+      "date": "2024-02-01",
+      "tags": [
+        "Toys",
+        "Everyday Objects"
+      ],
+      "material": "Beech",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp"
+      ]
+    },
+    {
+      "slug": "veneered-box-beam-coffee-table",
+      "title": "Veneered box-beam coffee table",
+      "description": "A tricky piece, both to make and in appearance. This box-beam table has clean lines and - apparently - mitred joins, but such joins could never support the weight of the table top (or even a minimal load). Underneath its gnarly oaken veneer (which is real oak veneer - not vinyl) is a simple morttice and tenon framework which gives it strength to match its beauty. It sits on a narrower drop stand to give the additional illusion of floating in space.",
+      "date": "2024-01-01",
+      "tags": [
+        "Furniture"
+      ],
+      "material": "Oak veneer, spruce",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp"
+      ]
+    },
+    {
+      "slug": "fanciful-coffee-coasters",
+      "title": "Fanciful coffee coasters",
+      "description": "Simple coasters, entirely cut and shaped by hand (files, rasps, straight saw cuts) and decorated with transfer-on humourous messages.",
+      "date": "2024-01-01",
+      "tags": [
+        "Everyday Objects"
+      ],
+      "material": "Cherry, cork",
+      "mainImage": "main.webp",
+      "gallery": []
+    },
+    {
+      "slug": "meditation-table",
+      "title": "Meditation table",
+      "description": "Cherry meditation table in Indian style, with dovetailed draw and featuring a single-board solid cherry top. The legs appear to be butt-jointed but in fact are supported by hardwood dowels extending 1/3 of the way along the length of each leg for extraordinary supprt.",
+      "date": "2023-10-01",
+      "tags": [
+        "Furniture"
+      ],
+      "material": "Cherry",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp",
+        "06.webp",
+        "07.webp"
+      ]
+    },
+    {
+      "slug": "kitchen-implement-holder",
+      "title": "Kitchen implement holder",
+      "description": "Two-layered vintage-style kitchen utensil holder in oak with vinyl lettering. It features a large raised compartment for longer utensils as well as a shallower front section for smaller odds and ends.",
+      "date": "2023-09-01",
+      "tags": [
+        "Everyday Objects"
+      ],
+      "material": "Oak",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp"
+      ]
+    },
+    {
+      "slug": "house-nightlight",
+      "title": "House nightlight",
+      "description": "Multi-colored LED light ensconced in a beech house with windows to enable light passage and so it can serve as a nightlight.",
+      "date": "2023-08-01",
+      "tags": [
+        "Toys",
+        "Lighting"
+      ],
+      "material": "Beech",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "pan-lid-holder",
+      "title": "Pan-lid holder",
+      "description": "Kitchen pan-lid holder with curved profile made with half-finger joints.",
+      "date": "2023-05-01",
+      "tags": [
+        "Everyday Objects"
+      ],
+      "material": "Beech, mahogany",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp"
+      ]
+    },
+    {
+      "slug": "router-plane",
+      "title": "Router plane",
+      "description": "A completely custom router (or grooving) plane with screw-adjustable depth stop and iron mechanism.",
+      "date": "2023-05-01",
+      "tags": [
+        "Tools"
+      ],
+      "material": "Ash, beech",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp"
+      ]
+    },
+    {
+      "slug": "masonry-hammer",
+      "title": "Masonry hammer",
+      "description": "This was a 1930s masonry hammer, rusted and with a broken tenon. I replaced the handle with the same essence of timber and reground the original shape of the head. As always with these kind of projects, I embedded a portion of the original wood into the new handle so it \"carries with it\" something of its history.",
+      "date": "2023-05-01",
+      "tags": [
+        "Tools",
+        "Restoration"
+      ],
+      "material": "Oak, steel",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "stanley-handplane-restoration",
+      "title": "Stanley handplane restoration",
+      "description": "1960s Stanley #4 handplane, bought 12th-hand from eBay and restored. Rear tote was beyond repair, so I fashioned a new one and accompanying knob from cherry.",
+      "date": "2023-03-01",
+      "tags": [
+        "Tools",
+        "Restoration"
+      ],
+      "material": "Steel, cherry",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "bedside-lamp",
+      "title": "Bedside lamp",
+      "description": "Inspired by the treehouse look, this bedside table lamp for children features a USB LED light with multiple color settings and a patterned series of roof holes that, at nighttime, create pretty patterns of light on nearby surfaces.",
+      "date": "2023-03-01",
+      "tags": [
+        "Everyday Objects",
+        "Lighting"
+      ],
+      "material": "Mahogany, beech",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp",
+        "06.webp",
+        "07.webp",
+        "08.webp",
+        "09.webp",
+        "10.webp",
+        "11.webp"
+      ]
+    },
+    {
+      "slug": "art-box-and-foldable-easel",
+      "title": "Art box and foldable easel",
+      "description": "Foldable easel and artist's carry case for paints, brushes and other materials. Features an adjustable canvas support and divisible storage section.",
+      "date": "2023-02-01",
+      "tags": [
+        "Toys",
+        "Everyday Objects"
+      ],
+      "material": "Cherry",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp"
+      ]
+    },
+    {
+      "slug": "side-table",
+      "title": "Side table",
+      "description": "Side table in cherry with walnut shelf-rack and detailing.",
+      "date": "2022-11-01",
+      "tags": [
+        "Furniture"
+      ],
+      "material": "Cherry, native walknut",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp",
+        "06.webp",
+        "07.webp",
+        "08.webp"
+      ]
+    },
+    {
+      "slug": "japanese-style-workbench",
+      "title": "Japanese style workbench",
+      "description": "Lighweight workbench in the Japanese style, with single side vice, bench dogs and a  tapered through-tenon leg design to ensure joint strength even as the wood ages.",
+      "date": "2022-05-01",
+      "tags": [
+        "Tools"
+      ],
+      "material": "Mahogany, beech",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp"
+      ]
+    },
+    {
+      "slug": "crayon-holder",
+      "title": "Crayon holder",
+      "description": "Colorful crayon-holder with appliquè lettering in vinyl, suitable for up to 21 large wax crayons.",
+      "date": "2022-05-01",
+      "tags": [
+        "Toys"
+      ],
+      "material": "Mahogany, poplar",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp"
+      ]
+    },
+    {
+      "slug": "teddy-bed",
+      "title": "Teddy bed",
+      "description": "Removable mini-bedside table with fixed-position toy bed (complete with bedclothes) for a favourite teddy bear.",
+      "date": "2022-05-01",
+      "tags": [
+        "Toys"
+      ],
+      "material": "Spruce, bamboo",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp"
+      ]
+    },
+    {
+      "slug": "toy-laptop-pc",
+      "title": "Toy laptop PC",
+      "description": "Chalkboard laptop toy, with \"mouse\" eraser. Also features a real keyboard from a disused Asus laptop, for realistic typing.",
+      "date": "2022-05-01",
+      "tags": [
+        "Toys"
+      ],
+      "material": "Ply",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "memory-game-with-box",
+      "title": "Memory game with box",
+      "description": "Wooden memory card set game, featuring transferred images of various cartoon characters, particularly Disney princesses. The game is accompanied by a simple butted wooden box from lime wood.",
+      "date": "2021-12-01",
+      "tags": [
+        "Toys"
+      ],
+      "material": "Oak, lime wood",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp"
+      ]
+    },
+    {
+      "slug": "oak-console",
+      "title": "Oak console",
+      "description": "Simple oak, single cupboard, single-drawer console cabinet with mitred floating-panel door and upper-drawer with sharknose finger-pull.",
+      "date": "2021-09-01",
+      "tags": [
+        "Furniture"
+      ],
+      "material": "Oak",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "cuckoo-wall-light",
+      "title": "Cuckoo wall light",
+      "description": "Wall light inspired by the high-angled Swiss cuckoo clocks and made from mahogany and ash timber. Contains LED light wired via mains socket.",
+      "date": "2021-08-01",
+      "tags": [
+        "Lighting",
+        "Electronics"
+      ],
+      "material": "Mahogany, ash",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp"
+      ]
+    },
+    {
+      "slug": "study-desk",
+      "title": "Study desk",
+      "description": "Two-drawer study desk with in-built desk lamp and multiplug. It also features additional shelving within its right leg.",
+      "date": "2021-05-01",
+      "tags": [
+        "Furniture"
+      ],
+      "material": "Poplar",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "workbench",
+      "title": "Workbench",
+      "description": "Workbench featuring single side-clamp and floating lower shelf for additional storage.",
+      "date": "2021-04-01",
+      "tags": [
+        "Tools"
+      ],
+      "material": "Spruce",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp"
+      ]
+    },
+    {
+      "slug": "walnut-keepsake",
+      "title": "Walnut keepsake",
+      "description": "Two-tone keepsake with outer shell of black walnut with inner and lid fashioned from ash. The box features a mitred design, wherein the inner box is the main structural support of the outer one and enables the lid to fit snugly into position.",
+      "date": "2021-04-01",
+      "tags": [
+        "Everyday Objects",
+        "Cases and Boxes"
+      ],
+      "material": "Walnut, ash",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "adjustable-ipad-stand",
+      "title": "Adjustable iPad stand",
+      "description": "Two-tone iPad stand with charging cable runway and stainless steel hardware for 60° height/viewing angle adjustment.",
+      "date": "2021-02-01",
+      "tags": [
+        "Electronics",
+        "Everyday Objects"
+      ],
+      "material": "Beech, walnut",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp"
+      ]
+    },
+    {
+      "slug": "bedside-table-with-secret-compartment",
+      "title": "Bedside table with secret compartment",
+      "description": "A bedside table built with a secret, hidden compartment; heart-shaped hardware, built-in anti-spill cup-holder and featuring single-dowetail drawer.",
+      "date": "2021-02-01",
+      "tags": [
+        "Furniture"
+      ],
+      "material": "Poplar",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp",
+        "06.webp"
+      ]
+    },
+    {
+      "slug": "wooden-anglepoise-desk-lamp",
+      "title": "Wooden anglepoise desk lamp",
+      "description": "Wooden Anglepoise with just a hint of the steampunk about it.",
+      "date": "2021-01-01",
+      "tags": [
+        "Lighting",
+        "Electronics"
+      ],
+      "material": "Beech, mahogany",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp"
+      ]
+    },
+    {
+      "slug": "keepsake-box",
+      "title": "Keepsake box",
+      "description": "Keepsake box using finger joints and an indwelling lid feature to seal the box closed. It doesn't look like much but it was the first project I made from wood which required no nails or screws and so it was an important milestone for my woodwork.",
+      "date": "2020-12-01",
+      "tags": [
+        "Everyday Objects",
+        "Cases and Boxes"
+      ],
+      "material": "Lime wood, mahogany",
+      "mainImage": "main.webp",
+      "gallery": [
+        "01.webp",
+        "02.webp",
+        "03.webp",
+        "04.webp",
+        "05.webp"
       ]
     }
   ]
